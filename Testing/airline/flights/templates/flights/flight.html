@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Flight: {{flight.origin}} to {{flight.destination}}</title>
+    </head>
+    <body>
+        <div style="display:flex; justify-content:center; ">
+            <h1>Flight {{flight.id}}</h1>
+            <div style="left:43%; bottom:50%; position:absolute; text-align:center;">
+                Origin: {{flight.origin}}
+                <br>
+                Destination: {{flight.destination}}
+                <br>
+                Duration : {{flight.duration}}
+            </div>
+            <br>
+        </div>
+        <a style="position:absolute; bottom:42%; left:58%;" href="{% url 'index' %}">Back</a>
+
+    </body>
+</html>
